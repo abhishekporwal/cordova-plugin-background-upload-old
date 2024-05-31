@@ -11,13 +11,7 @@ Thumbs.db
 *.log
 *.swp
 *.user
+*.vscode
 
 node_modules
-
-
-
-
-
-
-
- 
+demo/node_modules

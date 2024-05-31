@@ -1,8 +1,7 @@
 {
-  "name": "upload_demo",
-  "app_id": "",
+  "name": "demo-new",
   "integrations": {
     "cordova": {}
   },
-  "type": "ionic-angular"
+  "type": "angular"
 }

@@ -1,47 +1,85 @@
 {
-  "name": "ionic-hello-world",
+  "name": "demo",
+  "version": "0.0.2",
   "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
-  "private": true,
+  "homepage": "https://ionicframework.com/",
   "scripts": {
-    "clean": "ionic-app-scripts clean",
-    "build": "ionic-app-scripts build",
-    "ionic:build": "ionic-app-scripts build",
-    "ionic:serve": "ionic-app-scripts serve"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e"
   },
+  "private": true,
   "dependencies": {
-    "@angular/common": "2.4.8",
-    "@angular/compiler": "2.4.8",
-    "@angular/compiler-cli": "2.4.8",
-    "@angular/core": "2.4.8",
-    "@angular/forms": "2.4.8",
-    "@angular/http": "2.4.8",
-    "@angular/platform-browser": "2.4.8",
-    "@angular/platform-browser-dynamic": "2.4.8",
-    "@angular/platform-server": "2.4.8",
-    "@ionic-native/core": "3.1.0",
-    "@ionic-native/splash-screen": "3.1.0",
-    "@ionic-native/status-bar": "3.1.0",
-    "@ionic/storage": "2.0.0",
-    "ionic-angular": "2.3.0",
-    "ionic-native": "^2.9.0",
-    "ionicons": "3.0.0",
-    "rxjs": "5.0.1",
-    "sw-toolbox": "3.4.0",
-    "zone.js": "0.7.2"
+    "@angular/common": "~14.2.2",
+    "@angular/core": "~14.2.2",
+    "@angular/forms": "~14.2.2",
+    "@angular/platform-browser": "~14.2.2",
+    "@angular/platform-browser-dynamic": "~14.2.2",
+    "@angular/router": "~14.2.2",
+    "@awesome-cordova-plugins/background-upload": "^5.45.0",
+    "@awesome-cordova-plugins/core": "^5.45.0",
+    "@awesome-cordova-plugins/file": "^5.45.0",
+    "@awesome-cordova-plugins/image-picker": "^5.45.0",
+    "@ionic/angular": "^6.2.5",
+    "cordova-ios": "6.2.0",
+    "rxjs": "~7.5.6",
+    "tslib": "^2.4.0",
+    "zone.js": "~0.11.8"
   },
   "devDependencies": {
-    "@ionic/app-scripts": "1.2.2",
-    "typescript": "2.0.9"
+    "@angular-devkit/build-angular": "~14.2.3",
+    "@angular-eslint/builder": "~14.0.4",
+    "@angular-eslint/eslint-plugin": "~14.0.4",
+    "@angular-eslint/eslint-plugin-template": "~14.0.4",
+    "@angular-eslint/template-parser": "~14.0.4",
+    "@angular/cli": "~14.2.3",
+    "@angular/compiler": "~14.2.2",
+    "@angular/compiler-cli": "~14.2.2",
+    "@angular/language-service": "~14.2.2",
+    "@ionic/angular-toolkit": "^7.0.0",
+    "@ionic/cordova-builders": "^7.0.0",
+    "@spoonconsulting/cordova-plugin-background-upload": "git+https://github.com/spoonconsulting/cordova-plugin-background-upload.git#master",
+    "@spoonconsulting/cordova-plugin-telerik-imagepicker": "^2.0.1",
+    "@types/node": "^12.11.1",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
+    "ajv": "8.8.2",
+    "cordova-android": "^11.0.0",
+    "cordova-plugin-device": "2.1.0",
+    "cordova-plugin-file": "^6.0.2",
+    "cordova-plugin-ionic-keyboard": "^2.2.0",
+    "cordova-plugin-ionic-webview": "^5.0.0",
+    "cordova-plugin-statusbar": "3.0.0",
+    "cordova-res": "^0.15.4",
+    "eslint": "^8.23.1",
+    "eslint-plugin-import": "2.26.0",
+    "eslint-plugin-jsdoc": "39.3.6",
+    "eslint-plugin-prefer-arrow": "1.2.3",
+    "native-run": "^1.7.0",
+    "ts-node": "~10.9.1",
+    "typescript": "~4.8.2"
   },
-  "cordovaPlugins": [
-    "cordova-plugin-whitelist",
-    "cordova-plugin-console",
-    "cordova-plugin-statusbar",
-    "cordova-plugin-device",
-    "cordova-plugin-splashscreen",
-    "ionic-plugin-keyboard"
-  ],
-  "cordovaPlatforms": [],
-  "description": "upload_demo: An Ionic project"
+  "description": "An Ionic project",
+  "cordova": {
+    "plugins": {
+      "cordova-plugin-statusbar": {},
+      "cordova-plugin-device": {},
+      "cordova-plugin-ionic-webview": {
+        "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+"
+      },
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-file": {
+        "ANDROIDX_WEBKIT_VERSION": "1.4.0"
+      },
+      "@spoonconsulting/cordova-plugin-telerik-imagepicker": {},
+      "@spoonconsulting/cordova-plugin-background-upload": {}
+    },
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
 }
